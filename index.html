@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="We introduce GRAIL, a novel agent for the social deduction game Avalon, which combines a graph-based belief inference model with a language model for interaction. GRAIL achieves a winrate of 67% against humans, and performs better than state-of-the-art reasoning models across all model sizes.">
+  <meta property="og:title" content="Bayesian Social Deduction with Graph-Informed Language Models"/>
+  <meta property="og:description" content="We introduce GRAIL, a novel agent for the social deduction game Avalon, which combines a graph-based belief inference model with a language model for interaction. GRAIL achieves a winrate of 67% against humans, and performs better than state-of-the-art reasoning models across all model sizes."/>
+  <meta property="og:url" content="https://camp-lab-purdue.github.io/bayesian-social-deduction/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="Bayesian Social Deduction with Graph-Informed Language Models">
+  <meta name="twitter:description" content="We introduce GRAIL, a novel agent for the social deduction game Avalon, which combines a graph-based belief inference model with a language model for interaction. GRAIL achieves a winrate of 67% against humans, and performs better than state-of-the-art reasoning models across all model sizes.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="static/images/AvalonOverview.png">
+  <meta name="twitter:card" content="GRAIL: Graph Reasoning Agent Informed through Language">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="GRAIL, Bayesian Social Deduction, Language Models, Avalon, Social Deduction Games, Social Reasoning, LRMs, Reasoning Models, AI Agents, LLMs, Deep Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -181,7 +181,7 @@
     <div class="container">
       <h2 class="title is-3">GRAIL: Graph Reasoning Agent Informed through Language</h2>
       <div class="is-four-fifths">
-        <img src="static/images/AvalonOverview.png" alt="MY ALT TEXT"/>
+        <img src="static/images/AvalonOverview.png" alt="The overview of the GRAIL agent within Avalon game"/>
         <h2 class="subtitle has-text-centered">
           Overview
         </h2>
@@ -199,7 +199,7 @@
           We find that the combination of the two components is crucial for the agent's performance, and that the LLM is able to provide a strong prior for the beliefs.
         </p>
         <div class="centered is-four-fifths" style="width: 70%; margin: 0 auto;">
-          <img src="./static/images/tables.png" alt="todo" style="width: 100%; display: block; margin: auto;">
+          <img src="./static/images/tables.png" alt="Tables demonstrating the winrates of GRAIL and other agnet types" style="width: 100%; display: block; margin: auto;">
         </div>
       </div>
     </div>
@@ -227,7 +227,7 @@
               <p>
                 We compared the winrate of GRAIL and the reasoning model across model sizes. We also tried GRAIL with DeepSeek-R1 models and the reasoning model with non-reasoning LLMs. The results demonstrates that the GRAIL agent can achieve impressive winrates across model sizes while the same cannot be said for the reasoning agent.
               </p>
-              <img src="./static/images/winrate_comparison_reasoning.png" alt="todo">
+              <img src="./static/images/winrate_comparison_reasoning.png" alt="Comparision of the winrates of GRAIL and reasoning models">
           </div>
         </div>
         <!--/ Belief Qs. -->
@@ -241,7 +241,7 @@
               We anallyzed the hallucination rates of GRAIL and the resaoning agent across different model sizes using an LLM-as-Judge scheme with 95% accuracy. Across all model sizes, our GRAIL agent achieves less hallucinations and the statements it makes in the game are more consistent with the game history and state.
               </p>
               <div class="centered is-four-fifths" style="width: 70%; margin: 0 auto;">
-                <img src="./static/images/hallucination_rates_by_size.png" alt="todo">
+                <img src="./static/images/hallucination_rates_by_size.png" alt="Hallucination rates of GRAIL and reasoning agents across model sizes">
               </div>
             </div>
           </div>
@@ -280,7 +280,7 @@
                 </ul> 
                 The results show that the participants significantly preferred GRAIL to a reasoning agent.
               </p>
-              <img src="./static/images/human_vote_comparison.png" alt="todo">
+              <img src="./static/images/human_vote_comparison.png" alt="evaluation of human players">
           </div>
         </div>
         <!--/ Belief Qs. -->
@@ -297,7 +297,7 @@
               <p>
                 We record the beliefs of the agents about the roles of the players and plot their distribution. The result shows that against humans, the GRAIL agent has a difficult time detecting the Evil players with a high certainity. This is in contrast to the games agains other agents which result in a high certainity about the player roles. For more in detail exploration of these results, please refer tot the paper.
                 </p>
-                <img src="./static/images/belief_violins_5-Round_Games_human_2.png" alt="todo">
+                <img src="./static/images/belief_violins_5-Round_Games_human_2.png" alt="belief distribution of GRAIL against human evil players">
             </div>
           </div>
         </div>
